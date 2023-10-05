@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Webpage</title>
+    <style>
+
+        body {
+            background-image: url('river.webp');
+            padding-bottom: 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        .background-img {
+            z-index: 1;
+            width: 100%;
+        }
+
+        .main-pg-background {
+            position: absolute;
+        }
+
+        .head-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(113, 158, 214);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0px;
+            left: 0px;
+        }
+        .menu {
+            height: 40px;
+        }
+        
+     
+
+        .search-bar {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid green;
+            margin-left: -2px;
+            padding-left: 30px;
+            width: 200px;
+        }
+
+
+        .side-bar-container {
+            background-color: rgb(247, 191, 7);
+            z-index: 2;
+            height: 1000px;
+            width: 60px;
+            position: relative;
+            left: 0px;
+        }
+
+
+        .middle-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 45px;
+            align-items: center;
+            cursor: pointer;
+            padding-top: 80px;
+        }
+
+        .left-section {
+            margin-left: 8px;
+        }
+
+        .mid {
+            background-color: aqua;
+            height: 200px;
+
+            margin-left: 300px;
+            
+        }
+
+        .shop-btn {
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            background-color: rgb(19, 192, 192);
+            border-style: 4px;
+            font-size: 40px;
+            font-style: bold;
+            box-shadow: 2px 2px 5px yellow;
+            cursor: pointer;
+        }
+
+        .shop-btn:hover {
+            background-color: rgb(247, 191, 7);
+            box-shadow: 2px 2px 5px rgb(19, 192, 192);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="head-container">
+        <div class="left-section">
+            <img class="menu" src="hamburger-menu.svg" alt="">
+        </div>
+        <div class="middle-section">
+            
+            <input class="search-bar" type="text" placeholder="SEARCH HERE" name="" id="">
+        </div>
+        <div class="right-section">
+
+        </div>
+    </header>
+    
+        <div class="side-bar-container">
+            <div class="sidebar-link">
+                <img src="home.svg" alt="">
+                <p>Home</p>
+            </div>
+            <div class="sidebar-link">
+                <img src="explore.svg" alt="">
+                <p>Explore</p>
+        </div>
+
+        <div class="mid">
+            <button class="shop-btn">Shop</button>
+        </div>
+       
+    
+</body>
+</html>
