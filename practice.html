@@ -7,7 +7,25 @@
 </head>
 <body>
     <script>
+        let randomNumber = Math.floor((Math.random() * 100) -1);
+        console.log(randomNumber);
+
+        let isCorrect = false;
         
+        while (!isCorrect) {
+            let guess = Number(prompt(`Guess a number from 1 - 100`));
+            
+            if (guess === randomNumber) {
+                alert('Correct!');
+                isCorrect = true;
+            } else if (guess < randomNumber) {
+                alert('HIGHER')
+            } else {
+                alert('LOWER')
+            }
+        }
+        
+       
     </script>
 </body>
 </html>
